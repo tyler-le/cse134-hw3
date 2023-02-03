@@ -1,34 +1,263 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Tyler's Portfolio</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="./">HOME</a></li>
-        <li><a href="./about.html">ABOUT ME</a></li>
-        <li><a href="./experience.html">EXPERIENCE</a></li>
-        <li><a href="./projects.html">PROJECTS</a></li>
-        <li><a href="./contact.html">CONTACT</a></li>
-        <li><a href="./labs.html">LABS</a></li>
-      </ul>
-    </nav>
-
     <main>
       <header>
-        <picture><img src="#" alt="My Face" /></picture>
+        <nav>
+          <ul>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#labs">LABS</a></li>
+          </ul>
+        </nav>
+
+        <!-- <picture><img src="#" alt="My Face" /></picture>
 
         <h1>Tyler Le</h1>
-        <p>Software Engineer Intern at Amazon</p>
+        <p>Software Engineer Intern at Amazon</p> -->
       </header>
 
+      <section id="about-me">
+        <article>
+          <p class="fade-in">Hello,</p>
+          <h3 class="fade-in">I'm Tyler Le</h3>
+          <p class="fade-in">Software Engineer Intern at Amazon</p>
+        </article>
+        <img
+          class="avatar fade-in"
+          src="./avatar.svg"
+          alt="Avatar Photo of Me"
+        />
+        
+      </section>
+
+      <section id="experience">
+        <h3 class="page-header">Experience</h3>
+
+        <div class="grid">
+          <div class="box">
+            <article>
+              <h5>Amazon</h5>
+              <p>Summer 2023.</p>
+            </article>
+          </div>
+
+          <div class="box">
+            <article>
+              <h5>General Atomics</h5>
+              <p>
+                Developed code on the Autonomous Takeoff and Landing Capability
+                for Unmanned Aerial Vehicles (UAVs).
+              </p>
+            </article>
+          </div>
+
+          <div class="box">
+            <article>
+              <h5>Cardea Bio</h5>
+              <p>
+                Automated science experiments with liquid-handling robots and
+                created an application to upload procedures to the robot.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h3 class="page-header">Projects</h3>
+        <article>
+          <h5>Autonomous Drone</h5>
+          <p>
+            Developed a fully autonomous drone using facial recognition and the
+            DJI Tello Python library.
+          </p>
+        </article>
+        <article>
+          <h5>Zoom Attendance Taker</h5>
+          <p>
+            Built a full-stack Flask web application, allowing users to upload a
+            screenshot of their Zoom meeting and to autonomously mark attendance
+            using facial recognition
+          </p>
+        </article>
+        <article>
+          <h5>Internship Tracker</h5>
+          <p>
+            Configured a comprehensive CI/CD pipeline using GitHub Actions for
+            automated linting, HTML validation, documentation generation and
+            testing of code changes. Wrote and executed automated E2E
+            (end-to-end) tests using Jest and Puppeteer that simulate user
+            interactions, such as clicks and form submissions to ensure the
+            app’s overall functionality with 97% code coverage.
+          </p>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h3 class="page-header">Contact Me</h3>
+        <form action="#">
+          <fieldset>
+            <legend>Contact Me</legend>
+            <!-- <label for="fname">Name</label> -->
+            <input
+              id="fname"
+              type="text"
+              placeholder="Enter Your Name"
+              required
+            />
+            <br />
+            <!-- <label for="email">Email</label> -->
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <br />
+            <!-- <label for="message">Message</label> -->
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter a Message"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="labs">
+        <hr />
+        <h2>EXTRA TAGS BELOW - TO BE DISCARDED</h2>
+        <hr />
+        <div>
+          This is a div, using a <span>span</span>
+          <b>am i bold?</b>
+          <strong>does bold look the same as strong?</strong>
+          <span>how about <i>italics</i> and <em>emphasis</em>?</span>
+          <code>cout &lt;&lt; "Hello World";</code>
+
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+
+          <pre>
+This     is using
+
+            the pre         tag
+          </pre>
+          <aside>Aside</aside>
+          <iframe
+            src="https://vlipsy.com/embed/MzCA8MQv"
+            width="640"
+            height="360"
+          ></iframe>
+          <audio controls>
+            <source src="./sound.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <video width="320" height="240" controls>
+            <source src="./movie.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <canvas id="myCanvas" width="200" height="100"> </canvas>
+          <svg width="100" height="100">
+            <circle
+              cx="50"
+              cy="50"
+              r="40"
+              stroke="orange"
+              stroke-width="4"
+              fill="green"
+            />
+          </svg>
+
+          <ol>
+            <li>1. First</li>
+            <li>2. Second</li>
+            <li>3. Third</li>
+          </ol>
+          <select>
+            <optgroup label="group" disabled>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </optgroup>
+            <optgroup label="group" disabled>
+              <option>Option A</option>
+              <option>Option B</option>
+              <option>Option C</option>
+            </optgroup>
+          </select>
+
+          <label for="lang-choice">Choose a favorite language:</label>
+          <input list="langs" id="lang-choice" name="lang-choice" />
+
+          <datalist id="langs">
+            <option value="C++"></option>
+            <option value="Python"></option>
+            <option value="Java"></option>
+          </datalist>
+
+          <details>
+            <summary>Lorem</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus beatae sequi voluptatem voluptates ad debitis obcaecati
+              nobis ipsum consequuntur! Vel veritatis quis quibusdam dolorum?
+              Sit culpa alias earum aliquid corporis!
+            </p>
+          </details>
+
+          <template><p>Hello</p></template>
+
+          <table>
+            <caption>
+              Probabilities
+            </caption>
+            <colgroup>
+              <col span="2" />
+              <col />
+            </colgroup>
+            <tr>
+              <th>Win</th>
+              <th>Lose</th>
+              <th>Tie</th>
+            </tr>
+            <tr>
+              <td>.5</td>
+              <td>.3</td>
+              <td>.2</td>
+            </tr>
+          </table>
+
+          <figure>
+            <img src="./figure.jpeg" alt="Surprise Figure" />
+            <figcaption>Never Gonna Give u up</figcaption>
+          </figure>
+          <hr />
+        </div>
+      </section>
     </main>
 
     <footer>Footer</footer>

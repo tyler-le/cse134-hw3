@@ -1,0 +1,188 @@
+:root {
+    --dark-grey: #757575;
+    --light-grey: #b3b3b3;
+    --off-white: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--off-white);
+    padding: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+section {
+    height: 100vh;
+}
+
+section:nth-child(odd) {
+    background-color: var(--light-grey);
+}
+
+section:nth-child(even) {
+    background-color: var(--dark-grey);
+}
+
+#about-me {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+#about-me article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+#about-me article p {
+    font-size: 24px;
+}
+
+#about-me article h3 {
+    font-size: 64px;
+}
+
+.avatar {
+    max-width: 250px;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 100px;
+    grid-gap: 2px;
+    border: 2px solid var(--off-white);
+    background-color: var(--off-white);
+}
+
+.box {
+    text-align: center;
+    background-color: var(--light-grey);
+    padding: 0px 20px;
+}
+
+.box h5 {
+    font-size: 24px;
+    margin: 20px 10px;
+}
+
+.box p {
+    margin: 20px 10px;
+    font-size: 16px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+#projects article {
+    display: flex;
+    align-items: center;
+    margin: 40px 80px;
+}
+
+
+
+#projects h5 {
+    flex: 1;
+    font-size: 22px;
+}
+
+#projects p {
+    flex: 2;
+    font-size: 20px;
+}
+
+.page-header {
+    font-size: 56px;
+    text-align: center;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 80vw;
+}
+
+form fieldset {
+    padding: 10px;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--dark-grey);
+    box-sizing: border-box;
+    margin: 25px 0px;
+}
+
+form button {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav li:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+
+}
