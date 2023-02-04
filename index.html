@@ -17,13 +17,13 @@
   <body>
     <main>
       <header>
-        <nav>
+        <nav class="header-nav">
           <ul>
             <li><a href="#about-me">ABOUT ME</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#labs">LABS</a></li>
+            <!-- <li><a href="#labs">LABS</a></li> -->
           </ul>
         </nav>
 
@@ -44,7 +44,6 @@
           src="./avatar.svg"
           alt="Avatar Photo of Me"
         />
-        
       </section>
 
       <section id="experience">
@@ -53,28 +52,37 @@
         <div class="grid">
           <div class="box">
             <article>
-              <h5>Amazon</h5>
+              <picture>
+                <img class="company-logo" src="./amazon.png" alt="">
+              </picture>
               <p>Summer 2023.</p>
             </article>
           </div>
 
           <div class="box">
             <article>
-              <h5>General Atomics</h5>
+              <picture>
+                <img class="company-logo" src="./general_atomics.png" alt="">
+              </picture>
               <p>
                 Developed code on the Autonomous Takeoff and Landing Capability
                 for Unmanned Aerial Vehicles (UAVs).
               </p>
+              
             </article>
           </div>
 
           <div class="box">
             <article>
-              <h5>Cardea Bio</h5>
+              <picture>
+                <img class="company-logo" src="./cardea_bio.png" alt="">
+              </picture>
               <p>
                 Automated science experiments with liquid-handling robots and
                 created an application to upload procedures to the robot.
               </p>
+              
+              
             </article>
           </div>
         </div>
@@ -103,9 +111,7 @@
             Configured a comprehensive CI/CD pipeline using GitHub Actions for
             automated linting, HTML validation, documentation generation and
             testing of code changes. Wrote and executed automated E2E
-            (end-to-end) tests using Jest and Puppeteer that simulate user
-            interactions, such as clicks and form submissions to ensure the
-            app’s overall functionality with 97% code coverage.
+            (end-to-end) tests using Jest and Puppeteer.
           </p>
         </article>
       </section>
@@ -143,7 +149,7 @@
         </form>
       </section>
 
-      <section id="labs">
+      <!-- <section id="labs">
         <hr />
         <h2>EXTRA TAGS BELOW - TO BE DISCARDED</h2>
         <hr />
@@ -257,15 +263,38 @@ This     is using
           </figure>
           <hr />
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>Footer</footer>
-    <script>
+    <footer>
+      <nav>
+        <h5>Socials</h5>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/le-tyler/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/tyler-le" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:le.tyler.h@gmail.com" target="_blank">Email</a></li>
+          <li><a href="tel:6193688172" target="_blank">Phone</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h5>Miscellaneous</h5>
+        <ul>
+          <li><a href="./Tyler_Le_Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- <script>
       var c = document.getElementById("myCanvas");
       var ctx = c.getContext("2d");
       ctx.font = "30px Arial";
       ctx.fillText("Hello World", 10, 50);
-    </script>
+    </script> -->
   </body>
 </html>

@@ -1,188 +1,302 @@
 :root {
-    --dark-grey: #757575;
-    --light-grey: #b3b3b3;
-    --off-white: #f5f5f5;
+  --dark-grey: #757575;
+  --light-grey: #b3b3b3;
+  --off-white: #f5f5f5;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  max-width: 100%;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: var(--off-white);
-    padding: 20px;
-    z-index: 1;
+.header-nav {
+  position: fixed;
+  width: 100%;
+  background-color: var(--off-white);
+  padding: 20px;
+  z-index: 1;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
-nav ul li {
-    margin: 10px;
+.header-nav ul li {
+  margin: 10px;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
 }
 
 section {
-    height: 100vh;
+  min-height: 100vh;
 }
 
 section:nth-child(odd) {
-    background-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 
 section:nth-child(even) {
-    background-color: var(--dark-grey);
+  background-color: var(--dark-grey);
 }
 
 #about-me {
-    display: flex;
-    text-align: left;
-    justify-content: center;
+  display: flex;
+  text-align: left;
+  justify-content: center;
 }
 
 #about-me article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
 }
 
 #about-me article p {
-    font-size: 24px;
+  font-size: 1.5em;
 }
 
 #about-me article h3 {
-    font-size: 64px;
+  font-size: 5em;
 }
 
 .avatar {
-    max-width: 250px;
+  /* max-width: 250px; */
+  width: 15rem;
 }
 
 #experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px 100px;
-    grid-gap: 2px;
-    border: 2px solid var(--off-white);
-    background-color: var(--off-white);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 100px;
+  grid-gap: 2px;
+  border: 2px solid var(--off-white);
+  background-color: var(--off-white);
 }
 
 .box {
-    text-align: center;
-    background-color: var(--light-grey);
-    padding: 0px 20px;
+  text-align: center;
+  background-color: var(--light-grey);
+  padding: 0px 20px;
 }
 
-.box h5 {
-    font-size: 24px;
-    margin: 20px 10px;
-}
+/* .box h5 {
+  font-size: 24px;
+  margin: 20px 10px;
+} */
 
 .box p {
-    margin: 20px 10px;
-    font-size: 16px;
+  margin: 20px 10px;
+  font-size: 16px;
+}
+
+.company-logo {
+    width: auto;
+    height: 3rem;
+    padding-top:2rem
 }
 
 #projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-
 
 #projects article {
-    display: flex;
-    align-items: center;
-    margin: 40px 80px;
+  display: flex;
+  align-items: center;
+  margin: 40px 80px;
 }
 
-
-
 #projects h5 {
-    flex: 1;
-    font-size: 22px;
+  flex: 1;
+  font-size: 1.5rem;
 }
 
 #projects p {
-    flex: 2;
-    font-size: 20px;
+  flex: 2;
+  font-size: 1rem;
 }
 
 .page-header {
-    font-size: 56px;
-    text-align: center;
+  font-size: 56px;
+  text-align: center;
 }
 
-
 #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
-    width: 80vw;
+  width: 80vw;
 }
 
 form fieldset {
-    padding: 10px;
+  padding: 10px;
 }
 
-form input, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--dark-grey);
-    box-sizing: border-box;
-    margin: 25px 0px;
+form input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--dark-grey);
+  box-sizing: border-box;
+  margin: 25px 0px;
 }
 
 form button {
-    cursor: pointer;
-    padding: 10px 25px;
-    border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  border: none;
+}
+
+footer {
+  background-color: var(--off-white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer nav {
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  /* padding: 100px; */
+}
+
+footer nav h5 {
+  color: var(--dark-grey);
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav a {
+  font-size: 16px;
 }
 
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-nav li:hover {
-    color: #000;
-    border-bottom: 2px solid #000;
+.header-nav li:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
 
+footer nav a:hover {
+    color: var(--dark-grey);
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet Style */
+  #about-me article p {
+    font-size: 1.2em;
+  }
+
+  #about-me article h3 {
+    font-size: 4em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #projects article {
+    flex-direction: column;
+  }
+  footer {
+    /* justify-content: left; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Phone Style */
+
+  .header-nav {
+    padding: 0.35rem 1rem;
+  }
+
+  .header-nav a {
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding: 5rem 1rem;
+  }
+
+  .page-header {
+    font-size: 3rem;
+  }
+
+  #about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me article p {
+    font-size: 1.2em;
+  }
+
+  #about-me article h3 {
+    font-size: 3.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 10px;
+  }
+
+  #projects article {
+    flex-direction: column;
+    margin: 40px 30px;
+  }
+
+  
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 3rem 0.75rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    .header-nav {
+        display: none;
+    }
 }
