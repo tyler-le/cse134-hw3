@@ -79,7 +79,7 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 50px;
+  padding: 0 50px;
 }
 
 #about-me article p {
@@ -114,13 +114,8 @@ section:nth-child(even) {
 .box {
   text-align: center;
   background-color: var(--light-grey);
-  padding: 0px 20px;
+  padding: 0 20px;
 }
-
-/* .box h5 {
-  font-size: 24px;
-  margin: 20px 10px;
-} */
 
 .box p {
   margin: 20px 10px;
@@ -164,6 +159,7 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 form {
@@ -180,7 +176,7 @@ textarea {
   padding: 12px;
   border: 1px solid var(--dark-grey);
   box-sizing: border-box;
-  margin: 25px 0px;
+  margin: 25px 0;
 }
 
 form button {
@@ -219,13 +215,8 @@ footer nav a {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .header-nav li:hover {
@@ -330,18 +321,12 @@ footer nav a:hover {
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(0deg); }
    80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+   85% { transform: rotate(10deg); }
+   95% { transform: rotate(-10deg); }
 }
 
 .wiggle {
   display: inline-block;
-  animation: wiggle 1.5s infinite;
-}
-
-.wiggle:hover {
-  animation: none;
+  animation: wiggle 2.5s infinite;
 }
