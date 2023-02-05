@@ -11,6 +11,27 @@
   scroll-behavior: smooth;
   max-width: 100%;
 }
+.mobile {
+  display: none;
+}
+
+#signature {
+    /* position:absolute;
+    padding-left: 10px;
+    left:0; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#signature{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: lighter;
+  /* display: inline-block; */
+}
 
 .header-nav {
   position: fixed;
@@ -107,9 +128,9 @@ section:nth-child(even) {
 }
 
 .company-logo {
-    width: auto;
-    height: 3rem;
-    padding-top:2rem
+  width: auto;
+  height: 3rem;
+  padding-top: 2rem;
 }
 
 #projects {
@@ -176,7 +197,6 @@ footer {
 }
 footer nav {
   padding: 1.5rem 3rem 1.5rem 3rem;
-  /* padding: 100px; */
 }
 
 footer nav h5 {
@@ -214,8 +234,9 @@ footer nav a {
 }
 
 footer nav a:hover {
-    color: var(--dark-grey);
-  }
+  color: var(--dark-grey);
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Tablet Style */
@@ -234,9 +255,6 @@ footer nav a:hover {
   #projects article {
     flex-direction: column;
   }
-  footer {
-    /* justify-content: left; */
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -244,6 +262,18 @@ footer nav a:hover {
 
   .header-nav {
     padding: 0.35rem 1rem;
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .mobile i {
+    font-size: 2.5rem;
+    padding: 15px 10px;
+    cursor: pointer;
   }
 
   .header-nav a {
@@ -280,8 +310,6 @@ footer nav a:hover {
     margin: 40px 30px;
   }
 
-  
-
   footer {
     flex-direction: column;
     align-items: center;
@@ -296,7 +324,24 @@ footer nav a:hover {
 }
 
 @media only screen and (max-width: 320px) {
-    .header-nav {
-        display: none;
-    }
+  .header-nav {
+    display: none;
+  }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+  display: inline-block;
+  animation: wiggle 1.5s infinite;
+}
+
+.wiggle:hover {
+  animation: none;
 }

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/3c46798e71.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
@@ -17,7 +21,11 @@
   <body>
     <main>
       <header>
+        <nav class="mobile">
+          <i class="fa fa-bars"></i>
+        </nav>
         <nav class="header-nav">
+          <a id="signature" href="#">TL</a>
           <ul>
             <li><a href="#about-me">ABOUT ME</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
@@ -26,11 +34,6 @@
             <!-- <li><a href="#labs">LABS</a></li> -->
           </ul>
         </nav>
-
-        <!-- <picture><img src="#" alt="My Face" /></picture>
-
-        <h1>Tyler Le</h1>
-        <p>Software Engineer Intern at Amazon</p> -->
       </header>
 
       <section id="about-me">
@@ -53,7 +56,11 @@
           <div class="box">
             <article>
               <picture>
-                <img class="company-logo" src="./amazon.png" alt="">
+                <img
+                  class="company-logo wiggle"
+                  src="./amazon.png"
+                  alt="Amazon Logo"
+                />
               </picture>
               <p>Summer 2023.</p>
             </article>
@@ -62,27 +69,32 @@
           <div class="box">
             <article>
               <picture>
-                <img class="company-logo" src="./general_atomics.png" alt="">
+                <img
+                  class="company-logo"
+                  src="./general_atomics.png"
+                  alt="General Atomics Logo"
+                />
               </picture>
               <p>
                 Developed code on the Autonomous Takeoff and Landing Capability
                 for Unmanned Aerial Vehicles (UAVs).
               </p>
-              
             </article>
           </div>
 
           <div class="box">
             <article>
               <picture>
-                <img class="company-logo" src="./cardea_bio.png" alt="">
+                <img
+                  class="company-logo"
+                  src="./cardea_bio.png"
+                  alt="Cardea Bio Logo"
+                />
               </picture>
               <p>
                 Automated science experiments with liquid-handling robots and
                 created an application to upload procedures to the robot.
               </p>
-              
-              
             </article>
           </div>
         </div>
@@ -121,7 +133,6 @@
         <form action="#">
           <fieldset>
             <legend>Contact Me</legend>
-            <!-- <label for="fname">Name</label> -->
             <input
               id="fname"
               type="text"
@@ -129,7 +140,6 @@
               required
             />
             <br />
-            <!-- <label for="email">Email</label> -->
             <input
               id="email"
               type="email"
@@ -137,7 +147,6 @@
               required
             />
             <br />
-            <!-- <label for="message">Message</label> -->
             <textarea
               name="message"
               id="message"
@@ -270,15 +279,23 @@ This     is using
       <nav>
         <h5>Socials</h5>
         <ul>
-          <li><a href="https://www.linkedin.com/in/le-tyler/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/tyler-le" target="_blank">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/le-tyler/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/tyler-le" target="_blank">GitHub</a>
+          </li>
         </ul>
       </nav>
 
       <nav>
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:le.tyler.h@gmail.com" target="_blank">Email</a></li>
+          <li>
+            <a href="mailto:le.tyler.h@gmail.com" target="_blank">Email</a>
+          </li>
           <li><a href="tel:6193688172" target="_blank">Phone</a></li>
         </ul>
       </nav>
