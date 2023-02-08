@@ -89,9 +89,11 @@ section:nth-child(even) {
 #about-me article h3 {
   font-size: 5em;
 }
-
+picture {
+  display: flex;
+  align-items: center;
+}
 .avatar {
-  /* max-width: 250px; */
   width: 15rem;
 }
 
